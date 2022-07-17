@@ -1,4 +1,4 @@
-import javax.management.DynamicMBean;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args){
@@ -40,5 +40,21 @@ public class Main {
         System.out.println("Size: " + dynamicArray.size);
         System.out.println("Capacity: " + dynamicArray.capacity);
         System.out.println("Empty: " + dynamicArray.isEmpty());
+
+        System.out.println("-----------------ArayList----------------");
+        ArrayList arrayList = new ArrayList<>();
+        System.out.println(arrayList);
+        System.out.println("Size: " + arrayList.size());
+        System.out.println("Empty: " + arrayList.isEmpty());
+
+        arrayList.add("A");
+        arrayList.add("B");
+        arrayList.add("C");
+        arrayList.add("D");
+        arrayList.add("E");
+
+        System.out.println(arrayList);
+        System.out.println("Size: " + arrayList.size());
+        System.out.println("Empty: " + arrayList.isEmpty());
     }
 }
